@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media_Query</title>
+    <style>
+        .header{
+            height: 100px;
+            background-color: cornflowerblue;
+        }
+        .main{
+            height: 100px;
+            display: flex;
+            background-color: rgb(159, 115, 189);
+        }
+        #two_1{
+            width: 25%;
+        }
+        #two_2{
+            width: 25%;
+        }
+        #two_3{
+            width: 25%;
+        }
+        #two_4{
+            width: 25%;
+        }
+        @media screen and (max-width:480px) {
+            .main{
+            height: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: rgb(203, 203, 73);
+            }
+            #two_1{
+                width: 100%;
+            }
+            #two_2{
+                width: 100%;
+            }
+            #two_3{
+                width: 100%;
+            }
+            #two_4{
+                width: 100%;
+            }
+        }
+        @media (min-width:480px) and (max-width:768px) {
+            .main{
+            height: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: rgb(99, 237, 127);
+            }
+            #two_1{
+                width: 50%;
+            }
+            #two_2{
+                width: 50%;
+            }
+            #two_3{
+                width: 50%;
+            }
+            #two_4{
+                width: 50%;
+            }
+        }
+        @media (min-width:769px) and (max-width:1024px) {
+            .main{
+            height: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: rgb(218, 122, 218);
+            }
+            #two_1{
+                width: 25%;
+            }
+            #two_2{
+                width: 50%;
+            }
+            #two_3{
+                width: 25%;
+            }
+            #two_4{
+                width: 100%;
+            }
+        }
+         @media screen and (min-width:1025px) {
+            .main{
+            height: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: rgb(211, 122, 90);
+            }
+            #two_1{
+                width: 25%;
+            }
+            #two_2{
+                width: 25%;
+            }
+            #two_3{
+                width: 25%;
+            }
+            #two_4{
+                width: 25%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header"></div>
+    <div class="main">
+        <div class="one" id="two_1">1</div>
+        <div class="one" id="two_2">2</div>
+        <div class="one" id="two_3">3</div>
+        <div class="one" id="two_4">4</div>
+    </div>
+</body>
+</html>
