@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <style>
+        .one{
+            background-color: rgb(236, 110, 110);
+            color: rgb(191, 179, 245);
+            font-size: 150px;
+        }
+    </style>
+</head>
+<body>
+    <button>Click</button>
+    <div class="one">ABCD</div>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("div").removeClass("one")
+            })
+        })
+    </script>
+</body>
+</html>
