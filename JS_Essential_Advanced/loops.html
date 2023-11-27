@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // for loop
+
+        for (let i = 0; i <=5; i++) {
+            // console.log(i);
+            document.write(i + "<hr>");
+            // document.write("tops" + "<hr>");
+        }
+        
+        
+        // while loop
+
+        let j=0;
+        document.write ("<br>" + "<br>");
+        while (j<=5) {
+            
+            document.write(j + "<hr>");
+            j++;
+        }
+
+        // do while loop
+
+        let k = 0
+        document.write ("<br>" + "<br>");
+        do {
+          document.write(k + "<hr>") ;
+          k++ 
+        } while (k<=5);
+        
+        // for in loop
+
+        const courses = { 
+                            firstCourse: 'JavaScript', 
+                            secondCourse: 'React', 
+                            thirdCourse: 'Angular'
+                        }; 
+        let value = ''; 
+        
+        //using for in loop 
+        for (let item in courses) { 
+            value += courses[item] + " "; 
+        } 
+        console.log(value);
+    </script>
+</body>
+</html>
